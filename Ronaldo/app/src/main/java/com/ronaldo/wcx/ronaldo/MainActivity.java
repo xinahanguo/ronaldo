@@ -7,7 +7,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.ronaldo.wcx.bean.Message;
 import com.ypy.eventbus.EventBus;
 
@@ -23,7 +22,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        
         EventBus.getDefault().register(this);//注册EventBus
         
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
