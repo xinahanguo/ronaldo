@@ -11,6 +11,8 @@
         navigationBarColor,设置导航栏底色
     -->
     <android.support.v7.widget.Toolbar
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:titleTextColor="@color/white"
         android:background="@color/colorPrimary"
         android:id="@+id/toolbar"
@@ -19,30 +21,54 @@
 
 
     <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
+            <!--主内容要放在侧滑的前面-->
             <android.support.v4.view.ViewPager
+                android:id="@+id/vp_main"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 
+            <RelativeLayout
+                android:layout_width="@dimen/left_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
 
+                <ImageView
+                    android:id="@+id/home_navigation_top_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/left_imagewidth"
+                    android:layout_alignParentTop="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/left_bg"/>
 
-
+                <ListView
+                    android:id="@+id/home_navigation_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/home_navigation_top_image"
+                    android:background="@android:color/white"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"/>
+            </RelativeLayout>
     </android.support.v4.widget.DrawerLayout>
 
+    <!--<Button-->
+        <!--android:id="@+id/btn_goto"-->
+        <!--android:text="goto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
 
-
-    <Button
-        android:id="@+id/btn_goto"
-        android:text="goto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/tv_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+    <!--<TextView-->
+        <!--android:id="@+id/tv_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
 </LinearLayout>

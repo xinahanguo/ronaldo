@@ -9,6 +9,12 @@
         <!--<item name="android:windowNoTitle">true</item>-->
         <!--buildToolsVersion大于21，不可以使用windowActionBar-->
         <!--<item name="android:windowActionBar">false</item> &lt;!&ndash; actionbar隐藏 &ndash;&gt;-->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
     </style>
     <style name="AppTheme" parent="AppTheme.Base">
     </style>
