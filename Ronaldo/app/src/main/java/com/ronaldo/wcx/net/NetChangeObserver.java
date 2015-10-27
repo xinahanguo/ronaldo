@@ -16,12 +16,6 @@
 
 package com.ronaldo.wcx.net;
 
-/**
- * Author:  Tau.Chen
- * Email:   1076559197@qq.com | tauchen1990@gmail.com
- * Date:    2015/3/10.
- * Description:
- */
 public class NetChangeObserver {
 
 	/**

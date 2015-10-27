@@ -13,7 +13,6 @@ import view.BaseView;
  */
 public abstract class BaseActivity extends BaseAppCompatActivity implements BaseView{
     protected Toolbar mToolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

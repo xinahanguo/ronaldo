@@ -24,13 +24,6 @@ import android.content.IntentFilter;
 import com.ronaldo.wcx.utils.TLog;
 
 import java.util.ArrayList;
-
-/**
- * Author:  Tau.Chen
- * Email:   1076559197@qq.com | tauchen1990@gmail.com
- * Date:    2015/3/10.
- * Description:
- */
 public class NetStateReceiver extends BroadcastReceiver {
     public final static String CUSTOM_ANDROID_NET_CHANGE_ACTION = "com.github.obsessive.library.net.conn.CONNECTIVITY_CHANGE";
     private final static String ANDROID_NET_CHANGE_ACTION = "android.net.conn.CONNECTIVITY_CHANGE";

@@ -10,7 +10,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.ronaldo.wcx.cache.LruBitmapCache;
 
 /**
  * Created by wcx on 2015/10/27.

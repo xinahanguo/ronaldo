@@ -21,15 +21,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 import java.util.Locale;
-
-/**
- * Author:  Tau.Chen
- * Email:   1076559197@qq.com | tauchen1990@gmail.com
- * Date:    2015/3/10.
- * Description:
- */
 public class NetUtils {
-
 	public static enum NetType {
 		WIFI, CMNET, CMWAP, NONE
 	}

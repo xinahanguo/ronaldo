@@ -1,5 +1,4 @@
 package com.ronaldo.wcx.bean;
-
 /**
  * Created by wcx on 2015/10/26.
  */
