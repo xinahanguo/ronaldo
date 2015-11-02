@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="left_listdata">
+        <item>图片</item>
+        <item>视频</item>
+        <item>音乐</item>
+    </array>
+</resources>

@@ -3,9 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="left_width">200dp</dimen>
-    <dimen name="left_imagewidth">150dp</dimen>
+    <dimen name="left_width">200dp</dimen>              <!--左侧侧滑菜单的宽度-->
+    <dimen name="left_imageHeight">150dp</dimen>         <!--左侧侧滑顶部图片的高度-->
 
-
+    <dimen name="splash_imageTop">200dp</dimen>              <!--splash页面文字距顶部高度-->
 
 </resources>
