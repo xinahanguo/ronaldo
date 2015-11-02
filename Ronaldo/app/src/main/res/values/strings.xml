@@ -7,4 +7,12 @@
     <string name="common_empty_msg">抱歉,暂未获取到数据!\n请点击屏幕重试~</string>
     <string name="common_error_msg">抱歉,系统出错了!\n请点击屏幕重试~</string>
     <string name="common_no_network_msg">暂未连接上网络!\n请连接后点击屏幕重试~</string>
+
+    <string name="titleA">动漫</string>
+    <string name="titleB">明星</string>
+    <string name="titleC">汽车</string>
+    <string name="titleD">摄影</string>
+    <string name="titleE">美食</string>
+    <string name="titleF">美女</string>
+
 </resources>

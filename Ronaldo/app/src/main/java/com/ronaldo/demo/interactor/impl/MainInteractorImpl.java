@@ -17,6 +17,8 @@ public class MainInteractorImpl  implements MainInteractor{
 
     @Override
     public List<BaseFragment> getPagerFragments() {
+
+
         return null;
     }
 

@@ -10,9 +10,7 @@ import butterknife.ButterKnife;
  */
 public abstract class BaseAppCompatActivity extends AppCompatActivity{
 
-
     public Context mContext;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

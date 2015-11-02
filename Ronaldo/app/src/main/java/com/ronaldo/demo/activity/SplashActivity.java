@@ -5,9 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
 import com.android.ronaldo.R;
-
 import butterknife.Bind;
 
 /**
@@ -28,7 +26,6 @@ public class SplashActivity extends BaseActivity{
             mDraeables[i]=getResources().getDrawable(images_id[i]);
         }
         mAnimations[0]= AnimationUtils.loadAnimation(mContext, R.anim.sp_start);
-
         for (int i = 0; i <mAnimations.length; i++) {
             mAnimations[i].setDuration(2000);
             mAnimations[i].setAnimationListener(new SplashImageAnimationListener(i));
