@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.github.obsessive.library.smartlayout.SmartTabLayout-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/fragment_images_tab_smart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/sr_color_primary"-->
+        <!--app:stl_indicatorInterpolation="smart"-->
+        <!--app:stl_indicatorColor="@color/common_list_smart_tab_underline_color"-->
+        <!--app:stl_indicatorThickness="@dimen/fragment_common_list_smart_tab_indicator_height"-->
+        <!--app:stl_indicatorCornerRadius="@dimen/fragment_common_list_smart_tab_indicator_radius"-->
+        <!--app:stl_dividerColor="@android:color/transparent"-->
+        <!--app:stl_dividerThickness="0dp"-->
+        <!--app:stl_underlineColor="@android:color/transparent"-->
+        <!--app:stl_defaultTabTextColor="@android:color/white"-->
+        <!--app:stl_defaultTabTextSize="@dimen/big_small_text"-->
+        <!--app:stl_defaultTabTextHorizontalPadding="@dimen/fragment_common_list_smart_tab_padding"/>-->
+
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorWithoutPadding="false"
+        app:stl_indicatorInFront="false"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorGravity="bottom"
+        app:stl_indicatorColor="#40C4FF"
+        app:stl_indicatorThickness="4dp"
+        app:stl_indicatorCornerRadius="2dp"
+        app:stl_overlineColor="#4D000000"
+        app:stl_overlineThickness="0dp"
+        app:stl_underlineColor="#4D000000"
+        app:stl_underlineThickness="1dp"
+        app:stl_dividerColor="#4D000000"
+        app:stl_dividerThickness="1dp"
+        app:stl_defaultTabBackground="?attr/selectableItemBackground"
+        app:stl_defaultTabTextAllCaps="true"
+        app:stl_defaultTabTextColor="#FC000000"
+        app:stl_defaultTabTextSize="12sp"
+        app:stl_defaultTabTextHorizontalPadding="16dp"
+        app:stl_defaultTabTextMinWidth="0dp"
+        app:stl_distributeEvenly="false"
+        app:stl_clickable="true"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_images_pager"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

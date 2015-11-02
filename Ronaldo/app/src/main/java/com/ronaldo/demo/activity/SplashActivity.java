@@ -5,9 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
 import com.android.ronaldo.R;
-
 import butterknife.Bind;
 
 /**
