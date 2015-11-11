@@ -23,7 +23,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/splash_imageTop"/>
 
-
     <!--<Button-->
         <!--android:background="@android:color/transparent"-->
         <!--android:text="立即进入"-->
@@ -37,5 +36,15 @@
         <!--android:paddingLeft="20dip"-->
         <!--android:paddingRight="20dip"-->
         <!--android:paddingTop="5dip" />-->
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/splash_app_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>

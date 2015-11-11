@@ -1,34 +1,48 @@
 package com.ronaldo.demo.activity;
 
+import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ListView;
 
 import com.android.ronaldo.R;
-import com.ronaldo.demo.adapter.MyAdapter;
-import com.ronaldo.demo.bean.NavigationEntity;
-import com.ronaldo.demo.fragment.BaseFragment;
-import com.ronaldo.demo.present.MainPresent;
-import com.ronaldo.demo.view.MainView;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-
 /**
  * setNavigationIcon和setLogo设置Toolbar的icon
  */
-public class MainActivity extends BaseActivity implements MainView{
+public class MainActivity extends BaseActivity{
 
-    private ListView mListView;
-    private List<String> mDatas =new ArrayList<String>(Arrays.asList("Hello", "World", "Welcome"));
-    private MyAdapter mAdapter;
+    private DrawerLayout mDrawerLayout;
+    private ViewPager vpMain;
+    private ListView leftMainList;
+    private ActionBarDrawerToggle mActionBarDrawerToggle = null;
+    private Toolbar mToolbar;
 
     @Override
     protected void initView() {
-        mListView = (ListView) findViewById(R.id.home_navigation_list);
-        mListView.setAdapter(mAdapter = new MyAdapter(this, mDatas,R.layout.item_text));
-        MainPresent mainPresent = new MainPresent(mContext, this);
-        mainPresent.initialized();
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_main);
+        vpMain = (ViewPager) findViewById(R.id.vp_main);
+        leftMainList = (ListView) findViewById(R.id.home_left_list);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mActionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.drawer_open, R.string.drawer_close) {
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                setTitle(getString(R.string.app_name));
+            }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+                super.onDrawerClosed(drawerView);
+            }
+        };
+        mActionBarDrawerToggle.setDrawerIndicatorEnabled(true);//图像有返回的效果
+        mDrawerLayout.setDrawerListener(mActionBarDrawerToggle);
     }
 
     @Override
@@ -38,10 +52,6 @@ public class MainActivity extends BaseActivity implements MainView{
 
     @Override
     protected void getBundleExtras() {
-    }
-
-    @Override
-    public void initializeViews(List<BaseFragment> fragments, List<NavigationEntity> navigationList) {
 
     }
 }

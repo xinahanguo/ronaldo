@@ -7,5 +7,6 @@
     <dimen name="left_imageHeight">150dp</dimen>         <!--左侧侧滑顶部图片的高度-->
 
     <dimen name="splash_imageTop">200dp</dimen>              <!--splash页面文字距顶部高度-->
+    <dimen name="splash_textBottom">20dp</dimen>               <!--splash页面文字距底部高度-->
 
 </resources>

@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <array name="left_listdata">
-        <item>图片</item>
-        <item>视频</item>
-        <item>音乐</item>
-    </array>
-
-
-    <array name="images_category_list">
+    <array name="main_data">
         <item>美女</item>
         <item>动漫</item>
         <item>明星</item>

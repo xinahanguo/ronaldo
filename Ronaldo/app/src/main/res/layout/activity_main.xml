@@ -25,11 +25,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-            <!--主内容要放在侧滑的前面-->
-            <android.support.v4.view.ViewPager
-                android:id="@+id/vp_main"
+        <!--主内容要放在侧滑的前面-->
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent">
+
+                <!--
+                    stl_indicatorAlwaysInCenter:indicator在屏幕中是否居中，默认为false
+                    stl_indicatorWithoutPadding:
+                    stl_indicatorInFront:画在指示器的下划线，默认为false
+                    stl_indicatorInterpolation：指示器的插入器，有两种选择smart,linear
+                    stl_indicatorColor:indicator的颜色
+                    stl_indicatorColors:indicator的颜色集
+                    stl_indicatorThickness:indicator的厚度
+
+                    stl_overlineColor和stl_overlineThickness：顶线的颜色和厚度
+                    stl_distributeEvenly:为true的话，权重为1
+                    app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                -->
+
+                <com.ogaclejapan.smarttablayout.SmartTabLayout
+                    android:id="@+id/viewpagertab"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:stl_indicatorAlwaysInCenter="false"
+                    app:stl_indicatorWithoutPadding="true"
+                    app:stl_indicatorInFront="false"
+                    app:stl_indicatorInterpolation="smart"
+                    app:stl_indicatorGravity="bottom"
+
+                    app:stl_indicatorColor="@color/colorAccent"
+                    app:stl_indicatorThickness="4dp"
+                    app:stl_indicatorCornerRadius="2dp"
+                    app:stl_overlineColor="@color/colorPrimary"
+                    app:stl_overlineThickness="0dp"
+                    app:stl_underlineColor="@color/white"
+                    app:stl_underlineThickness="0dp"
+                    app:stl_dividerColor="@android:color/transparent"
+                    app:stl_dividerThickness="0dp"
+                    android:background="@color/colorPrimary"
+                    app:stl_defaultTabTextAllCaps="true"
+                    app:stl_defaultTabTextColor="@color/white"
+                    app:stl_defaultTabTextSize="16sp"
+                    app:stl_defaultTabTextHorizontalPadding="16dp"
+                    app:stl_defaultTabTextMinWidth="0dp"
+                    app:stl_distributeEvenly="true"
+                    app:stl_clickable="true"/>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn"-->
+                    <!--android:text="down"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp" />-->
+
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="@dimen/left_width"
@@ -37,7 +93,7 @@
                 android:layout_gravity="start">
 
                 <ImageView
-                    android:id="@+id/home_navigation_top_image"
+                    android:id="@+id/home_left_top_image"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/left_imageHeight"
                     android:layout_alignParentTop="true"
@@ -48,10 +104,10 @@
                     android:src="@mipmap/left_bg"/>
 
                 <ListView
-                    android:id="@+id/home_navigation_list"
+                    android:id="@+id/home_left_list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@id/home_navigation_top_image"
+                    android:layout_below="@id/home_left_top_image"
                     android:background="@android:color/white"
                     android:cacheColorHint="@android:color/transparent"
                     android:divider="@null"
@@ -60,13 +116,11 @@
                     android:scrollbars="none"/>
             </RelativeLayout>
     </android.support.v4.widget.DrawerLayout>
-
     <!--<Button-->
         <!--android:id="@+id/btn_goto"-->
         <!--android:text="goto"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content" />-->
-
     <!--<TextView-->
         <!--android:id="@+id/tv_content"-->
         <!--android:layout_width="match_parent"-->
