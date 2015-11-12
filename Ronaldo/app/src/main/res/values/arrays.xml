@@ -10,4 +10,11 @@
         <item>美食</item>
     </array>
 
+
+    <array name="left_data">
+        <item>Madraid</item>
+        <item>Man United</item>
+        <item>Chelsea</item>
+    </array>
+
 </resources>
